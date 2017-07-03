@@ -19,9 +19,10 @@ defmodule Jyggalag.Mixfile do
 
   defp deps do
     [
+      {:ex_doc, ">= 0.0.0", only: :dev},
+      {:credo, "~> 0.8", only: [:dev, :test], runtime: false},
       {:git_cli, "~> 0.2"},
-      {:poison, "~> 3.1"},
-      {:credo, "~> 0.8", only: [:dev, :test], runtime: false}
+      {:poison, "~> 3.1"}
     ]
   end
 
