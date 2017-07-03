@@ -8,6 +8,7 @@ defmodule Jyggalag.Mixfile do
       elixir: "~> 1.3",
       build_embedded: Mix.env == :prod,
       start_permanent: Mix.env == :prod,
+      escript: escript,
       deps: deps(),
       description: description(),
       package: package(),
@@ -15,6 +16,10 @@ defmodule Jyggalag.Mixfile do
       name: "Jyggalag",
       source_url: "https://github.com/Vesuvium/jyggalag"
     ]
+  end
+
+  def escript do
+      [main_module: Jyggalag]
   end
 
   defp deps do
