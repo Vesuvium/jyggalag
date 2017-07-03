@@ -1,5 +1,4 @@
-Jyggalag
-########
+# Jyggalag
 
 A command-line project tracker
 
@@ -13,5 +12,3 @@ Usage
     jyggalag new [--type] --github name
     jyggalag delete name
     jyggalag status name
-
-
