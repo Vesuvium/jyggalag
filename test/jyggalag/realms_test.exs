@@ -11,4 +11,9 @@ defmodule Jyggalag.RealmsTest do
         realms = ["first"]
         assert add("second", realms) == ["first", "second"]
     end
+
+    test "removing a realm" do
+        realms = ["first", "second", "third"]
+        assert delete("second", realms) == ["first", "third"]
+    end
 end
